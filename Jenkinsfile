@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Git-Release') {
             steps {
-                echo "Git-Release = v1.0.${env.BUILD_NUMBER}"
+                echo "Git-Release = v1.0.${env.BUILD_TAG}"
             }
         }   
         
