@@ -9,16 +9,16 @@ pipeline {
         }
         stage('Git-Release') {
             steps {
-                echo "Git-Release = v1.0.${env.BUILD_NUMBER}"
-                echo "Git-Release = ${env.BUILD_TAG}"
-                echo "Git-Release = ${env.EXECUTOR_NUMBER}"
-                echo "Git-Release = ${env.NODE_NAME}"
-                echo "Git-Release = ${env.NODE_LABELS}"
-                echo "Git-Release = ${env.WORKSPACE}"
-                echo "Git-Release = ${env.JENKINS_HOME}"
-                echo "Git-Release = ${env.JENKINS_URL}"
-                echo "Git-Release = ${env.BUILD_URL}"
-                echo "Git-Release = ${env.JOB_URL}"
+                echo "BUILD_NUMBER = v1.0.${env.BUILD_NUMBER}"
+                echo "BUILD_TAG = ${env.BUILD_TAG}"
+                echo "EXECUTOR_NUMBER = ${env.EXECUTOR_NUMBER}"
+                echo "NODE_NAME = ${env.NODE_NAME}"
+                echo "NODE_LABELS = ${env.NODE_LABELS}"
+                echo "WORKSPACE = ${env.WORKSPACE}"
+                echo "JENKINS_HOME = ${env.JENKINS_HOME}"
+                echo "JENKINS_URL = ${env.JENKINS_URL}"
+                echo "BUILD_URL = ${env.BUILD_URL}"
+                echo "JOB_URL = ${env.JOB_URL}"
                 
             }
         }   
