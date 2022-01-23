@@ -1,21 +1,17 @@
 pipeline {
     agent any
-    stages{
+       stages{
         stage('git-checkout') {
             agent any
             steps {
-                git branch: 'master', url: 'https://github.com/PV-giri/nishanth-data.git'
+                git branch: 'master', url: 'https://github.com/web3j/sample-project-maven.git'
             }
         }
-        stage('list-objects') {
-            agent any
+        stage('Git-Release') {
             steps {
-                sh '''#!/bin/bash
-            
-                    ls -ltrt
-                    pwd
-                '''
+                echo "Git-Release = v1.0.${env.BUILD_NUMBER}"
             }
-         }
+        }   
+        
     }
-}
+} 
