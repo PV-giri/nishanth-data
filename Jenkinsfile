@@ -19,6 +19,8 @@ pipeline {
                 echo "JENKINS_URL = ${env.JENKINS_URL}"
                 echo "BUILD_URL = ${env.BUILD_URL}"
                 echo "JOB_URL = ${env.JOB_URL}"
+                echo "P4_CLIENT = ${env.P4_CLIENT}"
+                echo "P4_CHANGELIST = ${env.P4_CHANGELIST}"
                 
             }
         }   
