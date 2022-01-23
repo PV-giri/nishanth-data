@@ -21,7 +21,12 @@ pipeline {
                 echo "JOB_URL = ${env.JOB_URL}"
                 echo "P4_CLIENT = ${env.P4_CLIENT}"
                 echo "P4_CHANGELIST = ${env.P4_CHANGELIST}"
-                
+                echo "P4_PORT = ${env.P4_PORT}"
+                echo "P4_ROOT = ${env.P4_ROOT}"
+                echo "P4_USER = ${env.P4_USER}"
+                echo "P4_TICKET = ${env.P4_TICKET}"
+                echo "P4_REVIEW  = ${env.P4_REVIEW }"
+                echo "P4_REVIEW_TYPE  = ${env.P4_REVIEW_TYPE }"
             }
         }   
         
