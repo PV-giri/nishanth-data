@@ -7,7 +7,7 @@ pipeline {
                 git branch: 'master', url: 'https://github.com/web3j/sample-project-maven.git'
             }
         }
-        stage('Git-Release') {
+        stage('Env-performnce-check') {
             steps {
                 echo "BUILD_NUMBER = v1.0.${env.BUILD_NUMBER}"
                 echo "BUILD_TAG = ${env.BUILD_TAG}"
